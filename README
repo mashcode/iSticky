@@ -1,0 +1,6 @@
+HTML template that contains css for iPad sticky footer.
+
+Uses css media queries to point iphone, ipad and "all" other formats to unique stylesheets. 
+
+Stickiness is disabled in non-ipad devices.
+
