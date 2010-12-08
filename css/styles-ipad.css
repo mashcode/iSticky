@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+}
+
+/* This is the stickiness using */
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 100px -60px; /* the bottom margin is the negative value of the footer's height */
+	}
+
+#footer, .push {
+	height: 60px; /* .push must be the same height as .footer */
+	clear: both;
+}
+/*End stickiness*/
+
+body {
+    background-color: #fff;	
+    color: #0d2647;
+    font-family: Arial, Helvetica, sans serif; 
+    font-size: 13px;
+    line-height: auto;
+	padding: 0;
+	margin: 0px auto 0px auto;
+	width: 960px;
+}
+
+a { color: #0d2647; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a[name]:hover { text-decoration: none; }
+p { margin: 10px 0; }
+
+/* header & navigation
+----------------------------------------------------------------------------------------*/
+#header { font-family: Arial, Helvetica, sans serif; background: ; margin: 0 0 20px; padding: 0; }
+#header #nav { position:relative; width: 100%; height: 130px; padding: 0; margin: 0; }
+#header #nav h2 { font-size: 16px; line-height: auto; padding: 0; margin: 0; border-bottom: 2px solid #fff; }
+#header h1 { font-family: MetaPlusMedium-, Arial, Helvetica, sans serif; color: #023462; font-size: 42pt; text-align: left; padding: 0; margin: 10px 0px 10px 130px; }
+#header h1 a { text-decoration: none; }
+#header #nav h2 a { color: #fff; text-decoration: none; }
+#header #nav h2 a:hover { color: #023462; text-decoration: none; }
+
+/* break
+----------------------------------------------------------------------------------------*/
+
+/* Content
+----------------------------------------------------------------------------------------*/
+#section { padding: 0; margin: 0; }
+#section #article .multicol { 
+	column-count: 2; 
+	column-gap: 50px;
+	column-fill: auto;
+	
+/* Column-count not implemented yet */  
+	-moz-column-count: 2;  
+    -webkit-column-count: 2;  
+  
+/* Column-gap not implemented yet */  
+    -moz-column-gap: 50px;  
+    -webkit-column-gap: 50px;
+
+/* Column-count not implemented yet */  
+	-moz-column-fill: auto;  
+    -webkit-column-fill: auto;  
+}
+#aside { float: left; }
+#footer { font-size: 18px; text-align: center; padding: 0; margin: 25px 0 0; }
+#footer a { padding: 0; margin: 0 10px; }
+
+/* break
+----------------------------------------------------------------------------------------*/
+
+/* Font
+----------------------------------------------------------------------------------------*/
+@font-face {
+        font-family: 'MetaPlusMedium-';
+        src: local('MetaPlusMedium-'),
+             local('MetaPlusMedium-'),
+             url('../font/MetaPlusMedium-.scr') format('');
+}
+
+@font-face {
+        font-family: 'MetaPlusBold-';
+        src: local('MetaPlusBold-'),
+             local('MetaPlusBold-'),
+             url('../font/MetaPlusBold-.scr') format('');
+}
+
+/* Generalized classes
+----------------------------------------------------------------------------------------*/
+
+.clear { clear:both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.clearfix:after {clear: both; display: block; font-size:0 ; line-height:0 ; visibility:hidden; width: 0; height: 0 }
+.clearfix { display: inline-block }
+* html .clearfix { height:1% }
+.clearfix { display:block }
