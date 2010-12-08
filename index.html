@@ -1,63 +1,90 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 	<title>mashcode/iSticky @ GitHub</title>
-	
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #1461d8;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-		h1 { font-size: 3.8em; color: #eb9e27; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #eb9e27; }
-    h3 { text-align: center; color: #eb9e27; }
-    a { color: #eb9e27; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
+
+    <link rel="stylesheet" type="text/css" href="css/styles-iphone.css" media="handheld, only screen and (max-width: 480px)" />
+	<link rel="stylesheet" type="text/css" href="css/styles-all.css" media="screen and (min-width: 481px)" />
+	<link rel="stylesheet" type="text/css" href="css/styles-ipad.css" media="screen and (min-width: 768px) and (max-width: 1024px)" />
+   	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="ie.css" media="all" />
+	<![endif]-->
 	
 </head>
 
 <body>
+
+<div class="wrapper">
   <a href="http://github.com/mashcode/iSticky"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
-  <div id="container">
+	<div id="header">
+		<div id="nav">
 
-    <div class="download">
-      <a href="http://github.com/mashcode/iSticky/zipball/master">
+		<div style="float: left;">
+		<a href="http://github.com/mashcode/iSticky/zipball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/mashcode/iSticky/tarball/master">
+		<a href="http://github.com/mashcode/iSticky/tarball/master">
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
+		</div>
 
-    <h1><a href="http://github.com/mashcode/iSticky">iSticky</a>
-      <span class="small">by <a href="http://github.com/mashcode">mashcode</a></span></h1>
+		<h1><a href="http://github.com/mashcode/iSticky">i<span style="color:green;">S</span>ticky</a>
+		<!--span class="small">by <a href="http://github.com/mashcode">mashcode</a></span--></h1>
 
-    <div class="description">
-      ipad sticky footer template
-    </div>
+		</div>
+	<div class="clear"></div>
+	</div>
 
-    <h2>Authors</h2>
-<p>Marc Shifflett (marc@marcshifflett.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Marc Shifflett (marc@marcshifflett.com)<br/>      </p>
+	<div id="section">
 
+		<div id="article">
 
+    <p>
+      <h2>iPad sticky footer template</h2>
+    </p>
+	
+    The relevant media query's
+    <p>
+    <xmp style="background:#000;color: #fff;padding:0px 20px;margin:0;">
+<link media="handheld, only screen and (max-width: 480px)"/>
+<link media="screen and (min-width: 481px)"/>
+<link media="screen and (min-width: 768px) and (max-width: 1024px)"/>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="ie.css" media="all"/>
+<![endif]-->
+    </xmp>
+    </p>
+    
+    <p>
+    The relevant sticky footer CSS comments in <a href="css/styles-ipad.css">styles-ipad.css</a>
+    </p>
+    <!--p>
+    <xmp style="background:#000;color: #fff;padding:0px 20px;margin:0;">
+/* This is the stickiness using */
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 100px -60px; /* the bottom margin is the negative value of the footer's height */
+	}
+
+#footer, .push {
+	height: 60px; /* .push must be the same height as .footer */
+	clear: both;
+}
+/*End stickiness*/
+    </xmp>
+    </p-->
+        
+    <!--h2>Author</h2>
+	<p>Marc Shifflett (marc@marcshifflett.com)</p-->
+	<h2>Contact</h2>
+	<p>Marc Shifflett (marc@marcshifflett.com)</p>
     <h2>Download</h2>
     <p>
       You can download this project in either
@@ -66,14 +93,19 @@
     </p>
     <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
       by running:
-      <pre>$ git clone git://github.com/mashcode/iSticky</pre>
+      <pre style="background:#000;color: #fff;padding:15px;">$ git clone git://github.com/mashcode/iSticky</pre>
     </p>
 
-    <div class="footer">
+        </div>
+	</div>
+ <div class="push"></div>
+ </div><!--/EndWrapper -->
+
+	<div class="clear"></div>
+
+    <div id="footer">
       get the source code on GitHub : <a href="http://github.com/mashcode/iSticky">mashcode/iSticky</a>
     </div>
-
-  </div>
 
   
 </body>
