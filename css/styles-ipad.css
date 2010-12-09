@@ -5,7 +5,12 @@
 	margin: 0;
 }
 
-/* This is the stickiness using */
+/* Start stickiness 
+Sticky Footer by Ryan Fait
+http://ryanfait.com/ 
+http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ 
+*/
+
 html, body {
 	height: 100%;
 }
