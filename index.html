@@ -6,12 +6,19 @@
 	<title>mashcode/iSticky @ GitHub</title>
 
     <link rel="stylesheet" type="text/css" href="css/styles-iphone.css" media="handheld, only screen and (max-width: 480px)" />
-	<link rel="stylesheet" type="text/css" href="css/styles-all.css" media="screen and (min-width: 481px)" />
 	<link rel="stylesheet" type="text/css" href="css/styles-ipad.css" media="screen and (min-width: 768px) and (max-width: 1024px)" />
+	<link rel="stylesheet" type="text/css" href="css/styles-all.css" media="screen and (min-width: 481px)" />
    	<!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" href="ie.css" media="all" />
 	<![endif]-->
-	
+<script language="javascript">
+if (Modernizr.canvas) { 
+// let's draw some shapes! 
+	} else { 
+	// no native canvas support available :( 
+	}
+</script>
+
 </head>
 
 <body>
@@ -46,7 +53,7 @@
 	
     The relevant media queries:
     <p>
-    <xmp style="background:#000;color: #fff;padding:0px 20px;margin:0;">
+    <xmp style="background:#000;color: #fff;padding:0px 20px;">
 <link media="handheld, only screen and (max-width: 480px)"/>
 <link media="screen and (min-width: 481px)"/>
 <link media="screen and (min-width: 768px) and (max-width: 1024px)"/>
@@ -96,8 +103,15 @@ html, body {
       <pre style="background:#000;color: #fff;padding:15px;">$ git clone git://github.com/mashcode/iSticky</pre>
     </p>
 
+	<div class="state">
+      <div class="ls" title="landscape"></div>
+      <div class="pt" title="portrait"></div>
+    </div>
+
         </div>
 	</div>
+
+
  <div class="push"></div>
  </div><!--/EndWrapper -->
 
