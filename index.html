@@ -48,10 +48,12 @@ if (Modernizr.canvas) {
 		<div id="article">
 
     <p>
-      <h2>iPad sticky footer template</h2>
+      <h2>iPad <small>[and iPhone]</small> sticky footer template</h2>
     </p>
-	
-    The relevant media queries:
+	<p>
+    To show how it's possible to target devices using css media queries though due to uneven browser support additional client-side detection will deliver a better user experience across all browsers and platforms.
+    </p>
+    The relevant media queries without src attributes:
     <p>
     <xmp style="background:#000;color: #fff;padding:0px 20px;">
 <link media="handheld, only screen and (max-width: 480px)"/>
@@ -66,28 +68,23 @@ if (Modernizr.canvas) {
     <p>
     The relevant sticky footer CSS commented in <a href="css/styles-ipad.css">styles-ipad.css</a>
     </p>
-    <!--p>
+    
+    <p>
+    The relevant sticky footer html tag structure: [thanks to <a href="http://ryanfait.com" target="_blank">Ryan Fait</a>]
+    </p>
+    <p>
     <xmp style="background:#000;color: #fff;padding:0px 20px;margin:0;">
-/* This is the stickiness using */
-html, body {
-	height: 100%;
-}
+<body>
+	<div class="wrapper">
+		Content
+	<div class="push"></div>
+	</div>
 
-.wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 100px -60px; /* the bottom margin is the negative value of the footer's height */
-	}
-
-#footer, .push {
-	height: 60px; /* .push must be the same height as .footer */
-	clear: both;
-}
-/*End stickiness*/
+	<div id="footer"></div>
+</body>
     </xmp>
-    </p-->
-        
+    </p>
+
     <!--h2>Author</h2>
 	<p>Marc Shifflett (marc@marcshifflett.com)</p-->
 	<h2>Contact</h2>
@@ -103,6 +100,7 @@ html, body {
       <pre style="background:#000;color: #fff;padding:15px;">$ git clone git://github.com/mashcode/iSticky</pre>
     </p>
 
+    <!-- This does some landscape/portrait detection -->
 	<div class="state">
       <div class="ls" title="landscape"></div>
       <div class="pt" title="portrait"></div>
