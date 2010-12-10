@@ -53,37 +53,35 @@ if (Modernizr.canvas) {
 	<p>
     To show how it's possible to target devices using css media queries though due to uneven browser support additional client-side detection will deliver a better user experience across all browsers and platforms.
     </p>
+    <p>
     The relevant media queries without src attributes:
-    <p>
-    <xmp style="background:#000;color: #fff;padding:0px 20px;">
-<link media="handheld, only screen and (max-width: 480px)"/>
-<link media="screen and (min-width: 481px)"/>
-<link media="screen and (min-width: 768px) and (max-width: 1024px)"/>
-<!--[if lt IE 9]>
-<link rel="stylesheet" type="text/css" href="ie.css" media="all"/>
-<![endif]-->
-    </xmp>
     </p>
-    
+
     <p>
+    <pre>
+&lt;link media="handheld, only screen and (max-width: 480px)"/&gt;
+&lt;link media="screen and (min-width: 481px)"/&gt;
+&lt;link media="screen and (min-width: 768px) and (max-width: 1024px)"/&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;link rel="stylesheet" type="text/css" href="ie.css" media="all"/&gt;
+&lt;![endif]--&gt;
+    </pre>
+    
     The relevant CSS commented in <a href="css/styles-ipad.css">styles-ipad.css</a>
     </p>
     
     <p>
     The relevant html tag structure: [thanks to <a href="http://ryanfait.com" target="_blank">Ryan Fait</a>]
     </p>
-    <p>
-    <xmp style="background:#000;color:#fff;padding:0px 20px;margin:0;">
-<body>
-	<div class="wrapper">
-		Content
-	<div class="push"></div>
-	</div>
 
-	<div id="footer"></div>
-</body>
-    </xmp>
-    </p>
+    <pre>
+&lt;div class="wrapper"&gt;
+Content
+&lt;div class="push">&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="footer"&gt;&lt;/div&gt;
+    </pre>
 
     <!--h2>Author</h2>
 	<p>Marc Shifflett (marc@marcshifflett.com)</p-->
