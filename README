@@ -1,8 +1,8 @@
-iSticky iPad sticky footer
+iSticky iPad [and iPhone] sticky footer
 
 http://mashcode.github.com/iSticky/
 
-HTML template contains css for iPad sticky footer.
+HTML template contains css for iPad sticky footer. thanks to Ryan Fait http://ryanfait.com 
 
 Uses css media queries to point iphone, ipad and "all" other formats to unique stylesheets. 
 
