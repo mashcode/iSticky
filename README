@@ -1,11 +1,10 @@
 iSticky iPad [and iPhone:orientation] sticky footer
 
-An experiment in how it might be possible to target devices using media queries. 
-
-http://mashcode.github.com/iSticky/
+An experiment in how it might be possible to target devices using media queries. Due to uneven @media browser support additional client-side detection will most assuredly deliver a better user experience across all browsers and platforms.
 
 * HTML template contains css for iPad sticky footer. Thanks to Ryan Fait http://ryanfait.com 
 * Uses css @media queries to point iphone, ipad and "all" other formats to unique stylesheets. 
 * Stickiness is disabled in non-ipad devices.
+* Fixes stickiness based on device orientation
 
-
+http://mashcode.github.com/iSticky
